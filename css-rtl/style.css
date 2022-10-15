@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body,p,a,h1,h2,h3,h4,h5,h6,.navigation .navigation-header{
-    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-family: 'DIN Next LT Arabic';
 }
 
 ul.bookmark-icons li {
@@ -20,4 +20,17 @@ ul.bookmark-icons li {
 .card-view-cor h5{
     line-height: 22px;
     min-height: 50px;
+}
+.avatar.bg-light-primary {
+    color: #adadad !important;
+}
+.avatar {
+    margin: auto !important;
+}
+
+.card .card-header h5{
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: normal !important;
 }
