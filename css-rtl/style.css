@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body,p,a,h1,h2,h3,h4,h5,h6,.navigation .navigation-header{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+ul.bookmark-icons li {
+    line-height: 1.5;
+    border-right: 1px solid #ebebeb;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+}
+
+.st--img-coures{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: 2px solid #eee;
+}
+.card-view-cor h5{
+    line-height: 22px;
+    min-height: 50px;
+}
