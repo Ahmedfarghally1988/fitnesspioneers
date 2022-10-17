@@ -44,6 +44,7 @@
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/fonts/font/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css-rtl/style.css">
     <!-- END: Custom CSS-->
 
@@ -56,74 +57,68 @@
 <div class="app-content content">
     <div class="content-wrapper">
         <div class="content-body">
-            <div class="auth-wrapper auth-basic px-2">
-                <div class="auth-inner my-2">
-                    <!-- Login basic -->
-                    <div class="card mb-0">
-                        <div class="card-body">
-                            <a href="index.html" class="brand-logo">
-                               <img src="app-assets/images/logo.png">
-                            </a>
-
-                            <h4 class="card-title mb-1">مرحبا بك في رولد اللياقة 👋</h4>
+            <div class="auth-wrapper auth-cover">
+                <div class="auth-inner row m-0">
+                    <!-- Brand logo-->
+                    <a class="brand-logo" href="#">
+                        <h2 class="brand-text text-primary ms-1"><img src="app-assets/images/logo.png"></h2>
+                    </a>
+                    <!-- /Brand logo-->
+                    <!-- Left Text-->
+                    <div class="d-none d-lg-flex col-lg-8 align-items-center p-5">
+                        <div class="w-100 d-lg-flex align-items-center justify-content-center px-5"><img class="img-fluid" src="app-assets/images/login-v2.svg" alt="Login V2" /></div>
+                    </div>
+                    <!-- /Left Text-->
+                    <!-- Login-->
+                    <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
+                        <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
+                            <h2 class="card-title fw-bold mb-1">مرحبا بك في رواد اللياقة 👋</h2>
                             <p class="card-text mb-2">برجاء تسجيل الدخول الى حسابك لتتعرف على خدماتنا</p>
-
                             <form class="auth-login-form mt-2" action="index.html" method="POST">
                                 <div class="mb-1">
-                                    <label for="login-email" class="form-label">البريد الالكتروني</label>
-                                    <input type="text" class="form-control" id="login-email" name="login-email" placeholder="john@example.com" aria-describedby="login-email" tabindex="1" autofocus />
+                                    <label class="form-label" for="login-email">البريد الالكتروني</label>
+                                    <input class="form-control" id="login-email" type="text" name="login-email" placeholder="john@example.com" aria-describedby="login-email" autofocus="" tabindex="1" />
                                 </div>
-
                                 <div class="mb-1">
                                     <div class="d-flex justify-content-between">
-                                        <label class="form-label" for="login-password">كلمة المرور</label>
-                                        <a href="#">
-                                            <small>نسيت كلمة السر</small>
-                                        </a>
+                                        <label class="form-label" for="login-password">كلمة المرور</label><a href="#"><small>نسيت كلمة السر</small></a>
                                     </div>
                                     <div class="input-group input-group-merge form-password-toggle">
-                                        <input type="password" class="form-control form-control-merge" id="login-password" name="login-password" tabindex="2" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="login-password" />
+                                        <input class="form-control form-control-merge" id="login-password" type="password" name="login-password" placeholder="············" aria-describedby="login-password" tabindex="2" />
                                         <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
                                     </div>
                                 </div>
                                 <div class="mb-1">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="remember-me" tabindex="3" />
-                                        <label class="form-check-label" for="remember-me"> تذكرني </label>
+                                        <input class="form-check-input" id="remember-me" type="checkbox" tabindex="3" />
+                                        <label class="form-check-label" for="remember-me"> تذكرني</label>
                                     </div>
                                 </div>
                                 <button class="btn btn-primary w-100" tabindex="4">تسجيل الدخول</button>
                             </form>
 
-                            <p class="text-center mt-2">
-                                <span>هل لديك حساب بالفعل </span>
-                                <a href="#">  <span>انشاء حساب جديد</span> </a>
-                            </p>
-
                             <div class="divider my-2">
                                 <div class="divider-text">او</div>
                             </div>
-
                             <div class="auth-footer-btn d-flex justify-content-center">
-                                <a href="#" class="btn btn-facebook">
-                                    <i data-feather="facebook"></i>
-                                </a>
-                                <a href="#" class="btn btn-twitter white">
-                                    <i data-feather="twitter"></i>
-                                </a>
-                                <a href="#" class="btn btn-google">
-                                    <i data-feather="mail"></i>
-                                </a>
-                                <a href="#" class="btn btn-github">
-                                    <i data-feather="github"></i>
-                                </a>
+                                <a class="btn btn-facebook" href="#"><i data-feather="facebook"></i></a>
+                                <a class="btn btn-twitter white" href="#"><i data-feather="twitter"></i></a>
+                                <a class="btn btn-google" href="#"><i data-feather="mail"></i></a>
+                                <a class="btn btn-github" href="#"><i data-feather="github"></i></a>
+                                <a class="btn btn-google" href="#"><i class="fab fa-google"></i></a>
                             </div>
+                            <div class="lan--login">
+                                <a href="#">English</a>
+                                <a href="#">عربي</a>
+                            </div>
+
                         </div>
                     </div>
-                    <!-- /Login basic -->
+                    <!-- /Login-->
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 
