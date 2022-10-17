@@ -50,3 +50,13 @@ ul.bookmark-icons li {
 .lan--login a:hover{
     text-decoration: underline;
 }
+
+.content.ui-sortable{
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.container-drag{
+    cursor: move;
+}
