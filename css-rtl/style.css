@@ -59,4 +59,34 @@ ul.bookmark-icons li {
 
 .container-drag{
     cursor: move;
+    position: relative;
+}
+
+.container-drag:before{
+    position: absolute;
+    content: "Press";
+}
+
+.link--card{
+    position: relative;
+    z-index: 999999;
+}
+
+.main-menu-content{
+    position: relative;
+}
+
+.main-menu-content:before{
+    position: absolute;
+    content: "";
+    background: url("../app-assets/images/logo.png");
+    bottom: -5px;
+    height: 150px;
+    width: 100%;
+    opacity: 0.15;
+    left: 0;
+    right: 0;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
