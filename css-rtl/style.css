@@ -58,18 +58,12 @@ ul.bookmark-icons li {
 }
 
 .container-drag{
-    cursor: move;
-    position: relative;
+
 }
 
-.container-drag:before{
-    position: absolute;
-    content: "Press";
-}
 
 .link--card{
     position: relative;
-    z-index: 999999;
 }
 
 .main-menu-content{
@@ -89,4 +83,34 @@ ul.bookmark-icons li {
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.auth-footer-btn a .feather{
+    color:#fff;
+}
+
+.brand-logo-login{
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.menu--mobile--only{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.menu--mobile--only li{
+
+}
+.main-menu ul.navigation-main {
+    height: 100%;
+}
+
+.main-menu.menu-native-scroll .main-menu-content {
+    overflow-y: revert !important;
 }

@@ -60,20 +60,16 @@
             <div class="auth-wrapper auth-cover">
                 <div class="auth-inner row m-0">
                     <!-- Brand logo-->
-                    <a class="brand-logo" href="#">
-                        <h2 class="brand-text text-primary ms-1"><img src="app-assets/images/logo.png"></h2>
-                    </a>
-                    <!-- /Brand logo-->
-                    <!-- Left Text-->
-                    <div class="d-none d-lg-flex col-lg-8 align-items-center p-5">
-                        <div class="w-100 d-lg-flex align-items-center justify-content-center px-5"><img class="img-fluid" src="app-assets/images/login-v2.svg" alt="Login V2" /></div>
-                    </div>
-                    <!-- /Left Text-->
-                    <!-- Login-->
-                    <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5">
+
+                    <div class="d-flex col-lg-4 align-items-center auth-bg px-2 p-lg-5 position-relative">
                         <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
-                            <h2 class="card-title fw-bold mb-1">مرحبا بك في رواد اللياقة 👋</h2>
-                            <p class="card-text mb-2">برجاء تسجيل الدخول الى حسابك لتتعرف على خدماتنا</p>
+
+                            <a class="brand-logo-login" href="#">
+                               <img src="app-assets/images/logo.png" width="200">
+                            </a>
+
+                            <h2 class="card-title fw-bold mb-1 text-center">مرحبا بك في رواد اللياقة 👋</h2>
+                            <p class="card-text mb-2 text-center">برجاء تسجيل الدخول الى حسابك </p>
                             <form class="auth-login-form mt-2" action="index.html" method="POST">
                                 <div class="mb-1">
                                     <label class="form-label" for="login-email">البريد الالكتروني</label>
@@ -96,7 +92,6 @@
                                 </div>
                                 <button class="btn btn-primary w-100" tabindex="4">تسجيل الدخول</button>
                             </form>
-
                             <div class="divider my-2">
                                 <div class="divider-text">او</div>
                             </div>
@@ -111,10 +106,12 @@
                                 <a href="#">English</a>
                                 <a href="#">عربي</a>
                             </div>
-
                         </div>
                     </div>
-                    <!-- /Login-->
+                    <div class="d-none d-lg-flex col-lg-8 align-items-center p-5">
+                        <div class="w-100 d-lg-flex align-items-center justify-content-center px-5"><img class="img-fluid" src="app-assets/images/forgot-password-v2.svg" alt="Login V2" /></div>
+                    </div>
+
                 </div>
             </div>
         </div>
