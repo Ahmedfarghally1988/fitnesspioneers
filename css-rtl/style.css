@@ -93,7 +93,7 @@ ul.bookmark-icons li {
     display: block;
     text-align: center;
     position: absolute;
-    top: 50px;
+    top: 15px;
     margin: auto;
     left: 0;
     right: 0;
@@ -113,4 +113,9 @@ ul.bookmark-icons li {
 
 .main-menu.menu-native-scroll .main-menu-content {
     overflow-y: revert !important;
+}
+
+[data-tooltip] {
+    display: none;
+    visibility: hidden;
 }
