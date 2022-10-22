@@ -114,8 +114,3 @@ ul.bookmark-icons li {
 .main-menu.menu-native-scroll .main-menu-content {
     overflow-y: revert !important;
 }
-
-[data-tooltip] {
-    display: none;
-    visibility: hidden;
-}

@@ -167,9 +167,19 @@
     background-color : #283046;
   }
   .auth-wrapper .auth-bg {
-    padding-top : 3rem;
+    padding-top : 7rem;
     margin : auto 0;
   }
+
+  .brand-logo-login{
+    top:20px;
+  }
+
+
+  .brand-logo-login img{
+    width: 110px;
+  }
+
   .auth-wrapper .auth-inner {
     background-color : #FFFFFF;
   }
