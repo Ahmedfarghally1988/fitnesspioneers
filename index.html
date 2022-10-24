@@ -41,7 +41,11 @@
     <link rel="stylesheet" type="text/css" href="css-rtl/chart-apex.css">
     <link rel="stylesheet" type="text/css" href="css-rtl/ext-component-toastr.css">
     <link rel="stylesheet" type="text/css" href="css-rtl/ui-feather.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/dragula.min.css">
     <!-- END: Page CSS-->
+
+    <!-- suneditor -->
+    <link href="css-rtl/suneditor.min.css" rel="stylesheet">
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/fonts/font/stylesheet.css">
@@ -290,514 +294,483 @@
                     </div>
                     <div class="d-flex flex-wrap" id="icons-container"></div>
                 </section>
-                <section id="dashboard-analytics">
 
 
-
-                        <div class="equalHeightWrapper">
-                            <div class="content-drag">
-                                <div class="container-drag">
-                                    <div class="row">
-
-                                      <div class="col-12">
-                                            <h2 class="content-header-title-dash float-start mb-3">اختصارات</h2>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="https://github.com/" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="grid" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">التقارير</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="shield" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">الصلاحيات</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="users" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">حسابي</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="settings" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">الاعدادات</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="help-circle" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">المساعدة</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="bell" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">الاشعارات</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="plus" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">اضافة دورة</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="grid" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">عرض الدورات</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="download" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">تحميل النموذج</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="mail" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">حملات واتساب</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="user" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">تسجيل</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="download" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">تحميل النموذج</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="plus" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">اضافة مستخدم</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-
-                                      <div class="col-lg-2 col-sm-6 col-6">
-                                          <a href="#" class="link--card">
-                                              <div class="card">
-                                                  <div class="card-header flex-column align-items-start pb-0">
-                                                      <div class="avatar bg-light-primary p-50 m-0">
-                                                          <div class="avatar-content">
-                                                              <i data-feather="users" class="font-medium-5"></i>
-                                                          </div>
-                                                      </div>
-                                                      <h5 class="fw-bolder mt-1 mb-1">عرض المستخدمين</h5>
-                                                  </div>
-                                              </div>
-                                          </a>
-                                      </div>
-                                  </div>
-                                </div>
-
-                                <div class="container-drag">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <h2 class="content-header-title-dash float-start mb-3">الدورات الاكثر تفاعلا</h2>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="card card-view-cor shadow-none border cursor-pointer">
-                                                <div class="card-body">
-                                                    <div class="d-flex justify-content-between">
-                                                        <img class="st--img-coures" src="app-assets/images/Certificate.jpg" alt=""/>
-                                                    </div>
-                                                    <div class="my-1">
-                                                        <h5>اسرار تقوية وضخامة عضلة الكور 26 أكتوبر 2022   </h5>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-50">
-                                                        <span class="text-truncate">المشتركين</span>
-                                                        <small class="text-muted">147</small>
-                                                    </div>
-                                                    <div class="progress progress-bar-warning progress-md mb-0" style="height: 10px">
-                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 70%"></div>
-                                                    </div>
-                                                </div>
+                <div id="card-drag-area">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="content-header-title-dash float-start mb-3">اختصارات</h2>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="https://github.com/" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="grid" class="font-medium-5"></i>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="card card-view-cor shadow-none border cursor-pointer">
-                                                <div class="card-body">
-                                                    <div class="d-flex justify-content-between">
-                                                        <img class="st--img-coures" src="app-assets/images/Certificate.jpg" alt=""/>
-                                                    </div>
-                                                    <div class="my-1">
-                                                        <h5>الدورة التأسيسية للمدرب الشخصي 2022م   </h5>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-50">
-                                                        <span class="text-truncate">المشتركين</span>
-                                                        <small class="text-muted">147</small>
-                                                    </div>
-                                                    <div class="progress progress-bar-success progress-md mb-0" style="height: 10px">
-                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 30%"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="card card-view-cor shadow-none border cursor-pointer">
-                                                <div class="card-body">
-                                                    <div class="d-flex justify-content-between">
-                                                        <img class="st--img-coures" src="app-assets/images/Certificate.jpg" alt=""/>
-                                                    </div>
-                                                    <div class="my-1">
-                                                        <h5>دورة تسويق وتطوير الذات 2022/06/31م  </h5>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-50">
-                                                        <span class="text-truncate">المشتركين</span>
-                                                        <small class="text-muted">100</small>
-                                                    </div>
-                                                    <div class="progress progress-bar-primary progress-md mb-0" style="height: 10px">
-                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 50%"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                        <h5 class="fw-bolder mt-1 mb-1">التقارير</h5>
                                     </div>
                                 </div>
-
-                                <div class="container-drag">
-                                    <div class="content-header row my-2">
-                                        <div class="content-header-left col-md-9 col-12 mb-2">
-                                            <div class="row breadcrumbs-top">
-                                                <div class="col-12">
-                                                    <h2 class="content-header-title-dash float-start mb-0">احصائيات</h2>
-                                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="shield" class="font-medium-5"></i>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row match-height">
-                                        <!-- Timeline Card -->
-                                        <div class="col-lg-4 col-12">
-                                            <div class="card card-user-timeline">
-                                                <div class="card-header">
-                                                    <div class="d-flex align-items-center">
-                                                        <i data-feather="list" class="user-timeline-title-icon"></i>
-                                                        <h4 class="card-title">المجموعات النشطة</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <ul class="timeline ms-50">
-                                                        <li class="timeline-item">
-                                                            <span class="timeline-point timeline-point-indicator"></span>
-                                                            <div class="timeline-event">
-                                                                <h6>اسرار تقوية وضخامة عضلة الكور 26 أكتوبر 2022</h6>
-                                                                <p>10/8/2022 12:00:00 AM</p>
-                                                            </div>
-                                                            <div class="progress progress-bar-warning progress-md mb-0" style="height: 10px">
-                                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 70%"></div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="timeline-item">
-                                                            <span class="timeline-point timeline-point-warning timeline-point-indicator"></span>
-                                                            <div class="timeline-event">
-                                                                <h6>الدورة التأسيسية للمدرب الشخصي 2022م</h6>
-                                                                <p>10/8/2022 12:00:00 AM</p>
-                                                            </div>
-                                                            <div class="progress progress-bar-primary progress-md mb-0" style="height: 10px">
-                                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 90%"></div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="timeline-item">
-                                                            <span class="timeline-point timeline-point-info timeline-point-indicator"></span>
-                                                            <div class="timeline-event">
-                                                                <h6>دورة تسويق وتطوير الذات 2022/06/31م</h6>
-                                                                <p>10/8/2022 12:00:00 AM</p>
-                                                            </div>
-                                                            <div class="progress progress-bar-success progress-md mb-0" style="height: 10px">
-                                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 65%"></div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="timeline-item">
-                                                            <span class="timeline-point timeline-point-warning timeline-point-indicator"></span>
-                                                            <div class="timeline-event">
-                                                                <h6>الدورة التأسيسية للمدرب الشخصي 2022م</h6>
-                                                                <p>10/8/2022 12:00:00 AM</p>
-                                                            </div>
-                                                        </li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--/ Timeline Card -->
-
-                                        <!-- Sales Stats Chart Card starts -->
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="card card-user-timeline">
-                                                <div class="card-header">
-                                                    <div class="d-flex align-items-center">
-                                                        <i data-feather="list" class="user-timeline-title-icon"></i>
-                                                        <h4 class="card-title">دورات سابقة</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <ul class="timeline ms-50">
-                                                        <li class="timeline-item">
-                                                            <span class="timeline-point timeline-point-danger timeline-point-indicator"></span>
-                                                            <div class="timeline-event">
-                                                                <h6>دورة تسويق وتطوير الذات 2022/06/31م</h6>
-                                                                <p>انتهت</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="timeline-item">
-                                                            <span class="timeline-point timeline-point-danger timeline-point-indicator"></span>
-                                                            <div class="timeline-event">
-                                                                <h6>الدورة التأسيسية للمدرب الشخصي 2022م</h6>
-                                                                <p>انتهت</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="timeline-item">
-                                                            <span class="timeline-point timeline-point-danger timeline-point-indicator"></span>
-                                                            <div class="timeline-event">
-                                                                <h6>اسرار تقوية وضخامة عضلة الكور 26 أكتوبر 2022</h6>
-                                                                <p>انتهت</p>
-                                                            </div>
-                                                        </li>
-                                                        <li class="timeline-item">
-                                                            <span class="timeline-point timeline-point-danger timeline-point-indicator"></span>
-                                                            <div class="timeline-event">
-                                                                <h6>اسرار تقوية وضخامة عضلة الكور 26 أكتوبر 2022</h6>
-                                                                <p>انتهت</p>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Sales Stats Chart Card ends -->
-
-                                        <!-- App Design Card -->
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="card">
-                                                <div class="card-header d-flex justify-content-between align-items-center">
-                                                    <h4 class="card-title">تقرير اخر 30 يوم</h4>
-                                                    <i data-feather="help-circle" class="font-medium-3 text-muted cursor-pointer"></i>
-                                                </div>
-                                                <div class="card-body p-0">
-                                                    <div id="goal-overview-radial-bar-chart" class="my-2"></div>
-                                                    <div class="row border-top text-center mx-0">
-                                                        <div class="col-6 border-end py-1">
-                                                            <p class="card-text text-muted mb-0">كل المتدربين</p>
-                                                            <h3 class="fw-bolder mb-0">2504</h3>
-                                                        </div>
-                                                        <div class="col-6 py-1">
-                                                            <p class="card-text text-muted mb-0">متدربين جدد</p>
-                                                            <h3 class="fw-bolder mb-0">84</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--/ App Design Card -->
+                                        <h5 class="fw-bolder mt-1 mb-1">الصلاحيات</h5>
                                     </div>
                                 </div>
-                                <div class="container-drag">
-                                    <div class="row match-height">
-
-                                        <div class="col-xl-8 col-md-6 col-12">
-                                            <div class="card card-statistics">
-                                                <div class="card-header">
-                                                    <h4 class="card-title">احصائيات وارقام</h4>
-                                                </div>
-                                                <div class="card-body statistics-body">
-                                                    <div class="row">
-
-                                                        <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0">
-                                                            <div class="d-flex flex-row">
-                                                                <div class="avatar bg-light-info me-2">
-                                                                    <div class="avatar-content">
-                                                                        <i data-feather="user" class="avatar-icon"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="my-auto">
-                                                                    <h4 class="fw-bolder mb-0">8.549k</h4>
-                                                                    <p class="card-text font-small-3 mb-0">المتدربين</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0">
-                                                            <div class="d-flex flex-row">
-                                                                <div class="avatar bg-light-primary me-2">
-                                                                    <div class="avatar-content">
-                                                                        <i data-feather="trending-up" class="avatar-icon"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="my-auto">
-                                                                    <h4 class="fw-bolder mb-0">230k</h4>
-                                                                    <p class="card-text font-small-3 mb-0">الشهادات</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-sm-0">
-                                                            <div class="d-flex flex-row">
-                                                                <div class="avatar bg-light-danger me-2">
-                                                                    <div class="avatar-content">
-                                                                        <i data-feather="box" class="avatar-icon"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="my-auto">
-                                                                    <h4 class="fw-bolder mb-0">1.423k</h4>
-                                                                    <p class="card-text font-small-3 mb-0">الدورات</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="users" class="font-medium-5"></i>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 col-12">
-                                            <div class="card earnings-card">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-6">
-
-                                                            <div class="font-small-2 mt-3">احصائيات هذا الشهر</div>
-                                                            <p class="card-text text-muted font-small-2">
-                                                                <span class="fw-bolder">68.2%</span><span>  افضل من الشهر الماضي بـ </span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <div id="earnings-chart"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">حسابي</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="settings" class="font-medium-5"></i>
                                             </div>
                                         </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">الاعدادات</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="help-circle" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">المساعدة</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="bell" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">الاشعارات</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="plus" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">اضافة دورة</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="grid" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">عرض الدورات</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="download" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">تحميل النموذج</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="mail" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">حملات واتساب</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="user" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">تسجيل</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="download" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">تحميل النموذج</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="plus" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">اضافة مستخدم</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-6">
+                            <a href="#" class="link--card">
+                                <div class="card">
+                                    <div class="card-header flex-column align-items-start pb-0">
+                                        <div class="avatar bg-light-primary p-50 m-0">
+                                            <div class="avatar-content">
+                                                <i data-feather="users" class="font-medium-5"></i>
+                                            </div>
+                                        </div>
+                                        <h5 class="fw-bolder mt-1 mb-1">عرض المستخدمين</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="content-header-title-dash float-start mb-3">الدورات الاكثر تفاعلا</h2>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card card-view-cor shadow-none border cursor-pointer">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="st--img-coures" src="app-assets/images/Certificate.jpg" alt=""/>
+                                    </div>
+                                    <div class="my-1">
+                                        <h5>اسرار تقوية وضخامة عضلة الكور 26 أكتوبر 2022   </h5>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-50">
+                                        <span class="text-truncate">المشتركين</span>
+                                        <small class="text-muted">147</small>
+                                    </div>
+                                    <div class="progress progress-bar-warning progress-md mb-0" style="height: 10px">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card card-view-cor shadow-none border cursor-pointer">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="st--img-coures" src="app-assets/images/Certificate.jpg" alt=""/>
+                                    </div>
+                                    <div class="my-1">
+                                        <h5>الدورة التأسيسية للمدرب الشخصي 2022م   </h5>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-50">
+                                        <span class="text-truncate">المشتركين</span>
+                                        <small class="text-muted">147</small>
+                                    </div>
+                                    <div class="progress progress-bar-success progress-md mb-0" style="height: 10px">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card card-view-cor shadow-none border cursor-pointer">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <img class="st--img-coures" src="app-assets/images/Certificate.jpg" alt=""/>
+                                    </div>
+                                    <div class="my-1">
+                                        <h5>دورة تسويق وتطوير الذات 2022/06/31م  </h5>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-50">
+                                        <span class="text-truncate">المشتركين</span>
+                                        <small class="text-muted">100</small>
+                                    </div>
+                                    <div class="progress progress-bar-primary progress-md mb-0" style="height: 10px">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 50%"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                    </div>
+                    <div class="content-header row my-2">
+                        <div class="content-header-left col-md-9 col-12 mb-2">
+                            <div class="row breadcrumbs-top">
+                                <div class="col-12">
+                                    <h2 class="content-header-title-dash float-start mb-0">احصائيات</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row match-height">
+                        <!-- Timeline Card -->
+                        <div class="col-lg-4 col-12">
+                            <div class="card card-user-timeline">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-center">
+                                        <i data-feather="list" class="user-timeline-title-icon"></i>
+                                        <h4 class="card-title">المجموعات النشطة</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="timeline ms-50">
+                                        <li class="timeline-item">
+                                            <span class="timeline-point timeline-point-indicator"></span>
+                                            <div class="timeline-event">
+                                                <h6>اسرار تقوية وضخامة عضلة الكور 26 أكتوبر 2022</h6>
+                                                <p>10/8/2022 12:00:00 AM</p>
+                                            </div>
+                                            <div class="progress progress-bar-warning progress-md mb-0" style="height: 10px">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 70%"></div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <span class="timeline-point timeline-point-warning timeline-point-indicator"></span>
+                                            <div class="timeline-event">
+                                                <h6>الدورة التأسيسية للمدرب الشخصي 2022م</h6>
+                                                <p>10/8/2022 12:00:00 AM</p>
+                                            </div>
+                                            <div class="progress progress-bar-primary progress-md mb-0" style="height: 10px">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 90%"></div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <span class="timeline-point timeline-point-info timeline-point-indicator"></span>
+                                            <div class="timeline-event">
+                                                <h6>دورة تسويق وتطوير الذات 2022/06/31م</h6>
+                                                <p>10/8/2022 12:00:00 AM</p>
+                                            </div>
+                                            <div class="progress progress-bar-success progress-md mb-0" style="height: 10px">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 65%"></div>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <span class="timeline-point timeline-point-warning timeline-point-indicator"></span>
+                                            <div class="timeline-event">
+                                                <h6>الدورة التأسيسية للمدرب الشخصي 2022م</h6>
+                                                <p>10/8/2022 12:00:00 AM</p>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Timeline Card -->
+
+                        <!-- Sales Stats Chart Card starts -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card card-user-timeline">
+                                <div class="card-header">
+                                    <div class="d-flex align-items-center">
+                                        <i data-feather="list" class="user-timeline-title-icon"></i>
+                                        <h4 class="card-title">دورات سابقة</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="timeline ms-50">
+                                        <li class="timeline-item">
+                                            <span class="timeline-point timeline-point-danger timeline-point-indicator"></span>
+                                            <div class="timeline-event">
+                                                <h6>دورة تسويق وتطوير الذات 2022/06/31م</h6>
+                                                <p>انتهت</p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <span class="timeline-point timeline-point-danger timeline-point-indicator"></span>
+                                            <div class="timeline-event">
+                                                <h6>الدورة التأسيسية للمدرب الشخصي 2022م</h6>
+                                                <p>انتهت</p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <span class="timeline-point timeline-point-danger timeline-point-indicator"></span>
+                                            <div class="timeline-event">
+                                                <h6>اسرار تقوية وضخامة عضلة الكور 26 أكتوبر 2022</h6>
+                                                <p>انتهت</p>
+                                            </div>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <span class="timeline-point timeline-point-danger timeline-point-indicator"></span>
+                                            <div class="timeline-event">
+                                                <h6>اسرار تقوية وضخامة عضلة الكور 26 أكتوبر 2022</h6>
+                                                <p>انتهت</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sales Stats Chart Card ends -->
+
+                        <!-- App Design Card -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h4 class="card-title">تقرير اخر 30 يوم</h4>
+                                    <i data-feather="help-circle" class="font-medium-3 text-muted cursor-pointer"></i>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div id="goal-overview-radial-bar-chart" class="my-2"></div>
+                                    <div class="row border-top text-center mx-0">
+                                        <div class="col-6 border-end py-1">
+                                            <p class="card-text text-muted mb-0">كل المتدربين</p>
+                                            <h3 class="fw-bolder mb-0">2504</h3>
+                                        </div>
+                                        <div class="col-6 py-1">
+                                            <p class="card-text text-muted mb-0">متدربين جدد</p>
+                                            <h3 class="fw-bolder mb-0">84</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ App Design Card -->
+                    </div>
+                    <div class="row match-height">
+
+                        <div class="col-xl-8 col-md-6 col-12">
+                            <div class="card card-statistics">
+                                <div class="card-header">
+                                    <h4 class="card-title">احصائيات وارقام</h4>
+                                </div>
+                                <div class="card-body statistics-body">
+                                    <div class="row">
+
+                                        <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0">
+                                            <div class="d-flex flex-row">
+                                                <div class="avatar bg-light-info me-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="user" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h4 class="fw-bolder mb-0">8.549k</h4>
+                                                    <p class="card-text font-small-3 mb-0">المتدربين</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-xl-0">
+                                            <div class="d-flex flex-row">
+                                                <div class="avatar bg-light-primary me-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="trending-up" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h4 class="fw-bolder mb-0">230k</h4>
+                                                    <p class="card-text font-small-3 mb-0">الشهادات</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 col-sm-6 col-12 mb-2 mb-sm-0">
+                                            <div class="d-flex flex-row">
+                                                <div class="avatar bg-light-danger me-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="box" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h4 class="fw-bolder mb-0">1.423k</h4>
+                                                    <p class="card-text font-small-3 mb-0">الدورات</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card earnings-card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-6">
+
+                                            <div class="font-small-2 mt-3">احصائيات هذا الشهر</div>
+                                            <p class="card-text text-muted font-small-2">
+                                                <span class="fw-bolder">68.2%</span><span>  افضل من الشهر الماضي بـ </span>
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <div id="earnings-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-                </section>
             </div>
         </div>
     </div>
@@ -835,6 +808,9 @@
     <script src="js/auth-login.js"></script>
     <!-- END: Page JS-->
 
+    <script src="js/dragula.min.js"></script>
+    <script src="js/ext-component-drag-drop.js"></script>
+
     <!-- BEGIN: Custom JS-->
     <script src="js/scripts.js"></script>
     <!-- END: Custom JS-->
@@ -858,16 +834,5 @@
     </script>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-<script>
-
-    $('.content-drag').sortable();
-    $('.collection .container-drag').draggable({
-        connectToSortable: '.content',
-        helper: 'clone',
-    });
-
-
-</script>
 
 </html>
