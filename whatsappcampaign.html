@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title> عرض حملات الواتساب </title>
+
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="css-rtl/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/fonts/feather/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/fonts/flag-icon-css/css/flag-icon.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="css-rtl/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/colors.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/components.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="css-rtl/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/authentication.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/dashboard-ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/chart-apex.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/ext-component-toastr.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/ui-feather.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/dragula.min.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/app-ecommerce.css">
+    <!-- END: Page CSS-->
+
+
+    <!-- suneditor -->
+    <link href="css-rtl/suneditor.min.css" rel="stylesheet">
+
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/fonts/font/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/style.css">
+    <!-- END: Custom CSS-->
+
+
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+
+
+
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <ul class="nav navbar-nav bookmark-icons d-block d-lg-none menu--mobile--only">
+            <li class="nav-item"><a class="nav-link" href="#"><i data-feather="user"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i data-feather="grid"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i data-feather="help-circle"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i data-feather="calendar"></i>  21 Oct 2022 </a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-whatsapp"></i></a></li>
+            <li class="nav-item"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
+        </ul>
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="#"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+
+                <ul class="nav navbar-nav bookmark-icons">
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="اضافة مستخدم"><i data-feather="user"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="الصلاحيات"><i data-feather="grid"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="المساعدة"><i data-feather="help-circle"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="التقويم الهجري"><i data-feather="calendar"></i>   2121 Oct 2022 </a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="واتساب"><i class="fab fa-whatsapp"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style" data-bs-toggle="tooltip" data-bs-placement="bottom" title="الوضع الليلي"><i class="ficon" data-feather="moon"></i></a></li>
+                </ul>
+
+            </div>
+            <ul class="nav navbar-nav align-items-center ms-auto">
+                <li class="nav-item dropdown dropdown-language">
+                    <a class="nav-link dropdown-toggle" id="dropdown-flag" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">عربي</span></a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-flag">
+                        <a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a>
+                        <a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a>
+                        <a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a>
+                        <a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon" data-feather="search"></i></a>
+                    <div class="search-input">
+                        <div class="search-input-icon"><i data-feather="search"></i></div>
+                        <input class="form-control input" type="text" placeholder="بحث ..." tabindex="-1" data-search="search">
+                        <div class="search-input-close"><i data-feather="x"></i></div>
+                        <ul class="search-list search-list-main"></ul>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown dropdown-notification me-25"><a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="ficon" data-feather="bell"></i><span class="badge rounded-pill bg-danger badge-up">5</span></a>
+                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-end">
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h4 class="notification-title mb-0 me-auto">الاشعارات</h4>
+                                <div class="badge rounded-pill badge-light-primary">6 جديدة</div>
+                            </div>
+                        </li>
+                        <li class="scrollable-container media-list">
+                            <a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar"><img src="app-assets/images/cert.jpg" alt="avatar" width="32" height="32"></div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">مبروك ابو محمد 🎉</span></p><small class="notification-text"> تم تسجيلك في دورة المدرب الشخصي بنجاح </small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar"><img src="app-assets/images/cert.jpg" alt="avatar" width="32" height="32"></div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">مبروك ابو محمد 🎉</span></p><small class="notification-text"> تم تسجيلك في دورة المدرب الشخصي بنجاح </small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar bg-light-danger">
+                                            <div class="avatar-content">MD</div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">مبروك ابو محمد 🎉</span>&nbsp;</p><small class="notification-text">  تم تسجيلك في دورة المدرب الشخصي بنجاح </small>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="list-item d-flex align-items-center">
+                                <h6 class="fw-bolder me-auto mb-0">الغاء الاشعارات</h6>
+                                <div class="form-check form-check-primary form-switch">
+                                    <input class="form-check-input" id="systemNotification" type="checkbox" checked="">
+                                    <label class="form-check-label" for="systemNotification"></label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown-menu-footer"><a class="btn btn-primary w-100" href="#">قراءة جميع الاشعارات</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none">
+                            <span class="user-name fw-bolder">Administration</span>
+                            <span class="user-status">admin@fitnesspioneers.com</span>
+                        </div>
+                        <span class="avatar">
+                            <img class="round" src="app-assets/images/cert.jpg" alt="avatar" height="40" width="40">
+                            <span class="avatar-status-online"></span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
+                        <a class="dropdown-item" href="#"><i class="me-50" data-feather="user"></i>  حسابي </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="me-50" data-feather="settings"></i>  الاعدادات </a>
+                        <a class="dropdown-item" href="#"><i class="me-50" data-feather="help-circle"></i> المساعدة </a>
+                        <a class="dropdown-item" href="#"><i class="me-50" data-feather="power"></i> تسجيل الخروج </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto">
+                    <a class="navbar-brand" href="#">
+                    <span class="brand-logo">
+                        <img src="app-assets/images/cert.jpg">
+                    </span>
+                        <h2 class="brand-text">Administration</h2>
+                    </a>
+                </li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse">
+                        <i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4 text-primary" data-feather="disc" data-ticon="disc"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="nav-item">
+                    <a class="d-flex align-items-center" href="index.html">
+                        <i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards"> لوحة التحكم </span><span class="badge badge-light-warning rounded-pill ms-auto me-1">2</span>
+                    </a>
+                    <ul class="menu-content">
+                        <li>
+                            <a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics"> التقارير </span></a>
+                        </li>
+                        <li class="">
+                            <a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce"> الصلاحيات </span></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="#">
+                        <i data-feather="database"></i>
+                        <span class="menu-title text-truncate" data-i18n="Card">ادارة الشهادات</span>
+                    </a>
+                    <ul class="menu-content">
+                        <li class="active"><a class="d-flex align-items-center" href="#"><i data-feather="plus"></i><span class="menu-item text-truncate" data-i18n="Basic">اضافة دورة</span></a></li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="layers"></i><span class="menu-item text-truncate" data-i18n="Basic">جميع الدورات</span></a></li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="download"></i><span class="menu-item text-truncate" data-i18n="Basic">تحميل النموذج</span></a></li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="#">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="menu-title text-truncate" data-i18n="Card">واتساب</span>
+                    </a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="hard-drive"></i><span class="menu-item text-truncate" data-i18n="Basic">الحملات</span></a></li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-item text-truncate" data-i18n="Basic">تسجيل الدخول</span></a></li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="download"></i><span class="menu-item text-truncate" data-i18n="Basic">تحميل النموذج</span></a></li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="#">
+                        <i data-feather="user"></i>
+                        <span class="menu-title text-truncate" data-i18n="Card">ادارة المستخدمين</span>
+                    </a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="plus"></i><span class="menu-item text-truncate" data-i18n="Basic">اضافة مستخدم</span></a></li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="users"></i><span class="menu-item text-truncate" data-i18n="Basic">عرض المستخدمين</span></a></li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="grid"></i><span class="menu-item text-truncate" data-i18n="Basic">الصلاحيات</span></a></li>
+                    </ul>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a class="d-flex align-items-center" href="#"><i data-feather="power"></i><span class="menu-title text-truncate" data-i18n="Chat">تسجيل الخروج</span></a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ecommerce-application">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-start mb-0">لوحة التحكم</h2>
+                            <div class="breadcrumb-wrapper">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">ادارة الشهادات</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">عرض حملات الواتساب
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-detached content-right">
+                <div class="content-body m-0">
+                    <div class="body-content-overlay"></div>
+                    <section id="ecommerce-searchbar" class="ecommerce-searchbar mb-3">
+                        <div class="row mt-1 justify-content-between">
+                            <div class="col-sm-4">
+                                <div class="input-group input-group-merge">
+                                    <input type="text" class="form-control search-product" id="shop-search" placeholder="Search Product" aria-label="Search..." aria-describedby="shop-search" />
+                                    <span class="input-group-text"><i data-feather="search" class="text-muted"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 text-lg-end">
+                                <a href="#" class="btn btn-primary btn-cart me-0 ms-sm-1 mb-1 mb-sm-0 waves-effect waves-float waves-light pa-btn">
+                                    <i class="fa fa-plus-circle">  </i> اضافة حملة
+                                </a>
+
+                                <a href="#" class="btn btn-outline-secondary btn-wishlist me-0 ms-sm-1 mb-1 mb-sm-0 waves-effect pa-btn">
+                                    <i class="fa fa-download">  </i> تنزيل النموذج
+                                </a>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- Basic Tables start -->
+                    <div class="row" id="basic-table">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead class="">
+                                        <tr class="head--table--view">
+                                            <th>صورة</th>
+                                            <th>عنوان الدورة</th>
+                                            <th>المستخدم</th>
+                                            <th>الحالة</th>
+                                            <th>تفعيل</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="cont--table--view">
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>تحديات سوق العمل</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>اخصائي التشريح الرياضي</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>المدرب الشخصي نوفمبر</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>اللياقة البدنية لكبار السن</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>خصومات اليوم الوطني</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>خصومات 92 بمناسبة اليوم الوطني</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>تحديات سوق العمل</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>تحديات سوق العمل</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>تحديات سوق العمل</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>تحديات سوق العمل</td>
+                                            <td>fitneespioneers@gmail.com</td>
+                                            <td>
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-between mb-50">
+                                                        <span class="text-truncate">75%</span>
+                                                        <small class="text-muted">55/60</small>
+                                                    </div>
+                                                    <div class="progress progress-bar-info progress-md mb-0" style="height: 10px">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="70" aria-valuemax="100" style="width: 60%"></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input type="checkbox" class="form-check-input" id="customSwitch1" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-pen"></i>
+                                                </a>
+                                                <a class="action--co" href="#">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Basic Tables end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+
+
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0">
+            <span class="float-md-start d-block d-md-inline-block mt-25">Copyright © 2022. <a class="ms-25" href="#" target="_blank">Farghally</a><span class="d-none d-sm-inline-block">, All rights reserved.</span></span>
+        </p>
+
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="js/apexcharts.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="js/app-menu.js"></script>
+    <script src="js/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="js/dashboard-ecommerce.js"></script>
+    <script src="js/auth-login.js"></script>
+    <!-- END: Page JS-->
+
+
+    <script src="js/dragula.min.js"></script>
+    <script src="js/ext-component-drag-drop.js"></script>
+
+    <!-- suneditor -->
+    <script src="js/suneditor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.49.0/lib/codemirror.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+
+
+    <!-- BEGIN: Custom JS-->
+    <script src="js/scripts.js"></script>
+    <!-- END: Custom JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+    <script>
+        $(window).on('load',  function(){
+            if (feather) {
+                feather.replace({ width: 14, height: 14 });
+            }
+        })
+    </script>
+
+
+
+</html>

@@ -406,3 +406,47 @@ ng-quill-editor.ng-invalid .ql-container {
 .sun-editor .se-wrapper .se-wrapper-wysiwyg {
     min-height: 300px;
 }
+
+.pa-btn{
+    padding:15px 30px;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.action--co{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 0 0 0 10px;
+    text-align: center;
+    padding: 0 0 0 0 !important;
+    line-height: 29px;
+    border-radius: 5px;
+    font-size: 12px;
+    background: #eee;
+}
+
+.action--co .fa-pen{
+    color: #2285ff;
+}
+
+.action--co .fa-trash{
+    color: red;
+}
+
+.head--table--view th{
+    font-size: 17px !important;
+    color:#000;
+}
+
+
+tbody.cont--table--view tr td{
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+tbody.cont--table--view tr td .card-body{
+    padding:0;
+}
