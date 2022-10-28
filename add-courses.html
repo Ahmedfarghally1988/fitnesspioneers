@@ -36,6 +36,10 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="css-rtl/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="css-rtl/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/form-pickadate.css">
+
     <link rel="stylesheet" type="text/css" href="css-rtl/authentication.css">
     <link rel="stylesheet" type="text/css" href="css-rtl/dashboard-ecommerce.css">
     <link rel="stylesheet" type="text/css" href="css-rtl/chart-apex.css">
@@ -321,7 +325,7 @@
                                     <div class="col-xl-6 col-md-6 col-12">
                                         <div class="mb-1">
                                             <label class="form-label">تاريخ بدء الدورة</label>
-                                            <input type="date" class="form-control" id="" placeholder="Enter Name" />
+                                            <input type="text" class="form-control picker" name="dob" id="bsDob" required />
                                         </div>
                                     </div>
 
@@ -431,8 +435,24 @@
                                     <div class="card-body">
                                         <form class="form form-horizontal">
                                             <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-1 row">
+                                                <div class="col-10">
+                                                    <div class="mb-2 row">
+                                                        <div class="col-sm-3">
+                                                            <label class="col-form-label" for="">تحميل الاكسل</label>
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <div class="input-group input-group-merge">
+                                                                <span class="input-group-text"><i data-feather="file"></i></span>
+                                                                <input type="file" id="" class="form-control" name="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 text-lg-end">
+                                                    <button class="btn btn-primary waves-effect waves-float waves-light" type="submit"> <i class="fa fa-plus"></i> </button>
+                                                </div>
+                                                <div class="col-10 d-none">
+                                                    <div class="mb-2 row">
                                                         <div class="col-sm-3">
                                                             <label class="col-form-label" for="">تحميل الاكسل</label>
                                                         </div>
@@ -608,9 +628,21 @@
     <script src="js/dragula.min.js"></script>
     <script src="js/ext-component-drag-drop.js"></script>
 
+
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/flatpickr.min.js"></script>
+    <script src="js/form-validation.js"></script>
+
+    <script src="js/picker.js"></script>
+    <script src="js/picker.date.js"></script>
+    <script src="js/picker.time.js"></script>
+    <script src="js/legacy.js"></script>
+    <script src="js/form-pickers.js"></script>
+
     <!-- suneditor -->
     <script src="js/suneditor.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/codemirror@5.49.0/lib/codemirror.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
 
 
@@ -635,7 +667,6 @@
             }
         })
     </script>
-
 
 
 </html>

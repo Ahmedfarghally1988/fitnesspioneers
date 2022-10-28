@@ -36,6 +36,10 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="css-rtl/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="css-rtl/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="css-rtl/form-pickadate.css">
+
     <link rel="stylesheet" type="text/css" href="css-rtl/authentication.css">
     <link rel="stylesheet" type="text/css" href="css-rtl/dashboard-ecommerce.css">
     <link rel="stylesheet" type="text/css" href="css-rtl/chart-apex.css">
@@ -331,12 +335,12 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered">
+                                    <table class="table">
                                         <thead class="">
                                         <tr class="head--table--view">
                                             <th>#</th>
-                                            <th>اسم المستخدم</th>
                                             <th>صورة</th>
+                                            <th>اسم المستخدم</th>
                                             <th>البريد الالكتروني</th>
                                             <th>Roles</r></th>
                                         </tr>
@@ -347,7 +351,6 @@
                                             <td>
                                                 <span class="fw-bold">1</span>
                                             </td>
-                                            <td>امل السايس</td>
                                             <td>
                                                 <div class="avatar-group">
                                                     <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
@@ -355,6 +358,8 @@
                                                     </div>
                                                 </div>
                                             </td>
+                                            <td>امل السايس</td>
+
                                             <td><span class="rounded-pill badge-light-primary me-2"> fitneespioneers@gmail.com </span></td>
                                             <td>
                                                 <a class="action--co" href="#">
@@ -365,16 +370,17 @@
 
                                         <tr>
                                             <td>
-                                                <span class="fw-bold">1</span>
+                                                <span class="fw-bold">2</span>
+                                            </td>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
                                             </td>
                                             <td>magdi</td>
-                                            <td>
-                                                <div class="avatar-group">
-                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
-                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
-                                                    </div>
-                                                </div>
-                                            </td>
+
                                             <td><span class="rounded-pill badge-light-primary me-2"> fitneespioneers@gmail.com </span></td>
                                             <td>
                                                 <a class="action--co" href="#">
@@ -385,16 +391,17 @@
 
                                         <tr>
                                             <td>
-                                                <span class="fw-bold">1</span>
+                                                <span class="fw-bold">3</span>
+                                            </td>
+                                            <td>
+                                                <div class="avatar-group">
+                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
+                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
+                                                    </div>
+                                                </div>
                                             </td>
                                             <td>سيد علام</td>
-                                            <td>
-                                                <div class="avatar-group">
-                                                    <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
-                                                        <img src="app-assets/images/cert.jpg" alt="Avatar" height="40" width="40" />
-                                                    </div>
-                                                </div>
-                                            </td>
+
                                             <td><span class="rounded-pill badge-light-primary me-2"> fitneespioneers@gmail.com </span></td>
                                             <td>
                                                 <a class="action--co" href="#">
@@ -405,9 +412,8 @@
 
                                         <tr>
                                             <td>
-                                                <span class="fw-bold">1</span>
+                                                <span class="fw-bold">4</span>
                                             </td>
-                                            <td>al3bd@sma.com</td>
                                             <td>
                                                 <div class="avatar-group">
                                                     <div data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar m-0 pull-up my-0" title="Lilian Nenez">
@@ -415,6 +421,8 @@
                                                     </div>
                                                 </div>
                                             </td>
+                                            <td>al3bd@sma.com</td>
+
                                             <td><span class="rounded-pill badge-light-primary me-2"> fitneespioneers@gmail.com </span></td>
                                             <td>
                                                 <a class="action--co" href="#">
@@ -479,9 +487,21 @@
     <script src="js/dragula.min.js"></script>
     <script src="js/ext-component-drag-drop.js"></script>
 
+
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/flatpickr.min.js"></script>
+    <script src="js/form-validation.js"></script>
+
+    <script src="js/picker.js"></script>
+    <script src="js/picker.date.js"></script>
+    <script src="js/picker.time.js"></script>
+    <script src="js/legacy.js"></script>
+    <script src="js/form-pickers.js"></script>
+
     <!-- suneditor -->
     <script src="js/suneditor.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/codemirror@5.49.0/lib/codemirror.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
 
 

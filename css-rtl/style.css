@@ -418,23 +418,16 @@ ng-quill-editor.ng-invalid .ql-container {
 .action--co{
     width: 30px;
     height: 30px;
-    float: right;
-    margin: 0 0 0 10px;
+    margin: auto;
     text-align: center;
     padding: 0 0 0 0 !important;
-    line-height: 29px;
-    border-radius: 5px;
+    line-height: 27px;
+    border-radius: 3px;
     font-size: 12px;
-    background: #eee;
+    color: #000;
 }
 
-.action--co .fa-pen{
-    color: #2285ff;
-}
 
-.action--co .fa-trash{
-    color: red;
-}
 
 .head--table--view th{
     font-size: 17px !important;
@@ -449,4 +442,18 @@ tbody.cont--table--view tr td{
 
 tbody.cont--table--view tr td .card-body{
     padding:0;
+}
+
+#basic-table{
+    text-align: center;
+}
+
+.avatar-group{
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+    html body .app-content {
+        padding: calc(5rem - 0.8rem + 4.45rem + 1.3rem) calc(2rem - 0.8rem) 0 calc(2rem - 0.8rem) !important;
+    }
 }
